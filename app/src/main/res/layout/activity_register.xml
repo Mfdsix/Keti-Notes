@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="20pt"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/username"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5pt"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="@string/username"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5pt"
+        android:id="@+id/edt_username"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        tools:ignore="Autofill" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/email_address"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5pt"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="@string/email_address"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5pt"
+        android:id="@+id/edt_email"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        tools:ignore="Autofill" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/password"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5pt"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="@string/password"
+        android:textColor="@color/black"
+        android:id="@+id/edt_password2"
+        android:layout_marginBottom="5pt"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        tools:ignore="Autofill" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/password_confirmation"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5pt"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="@string/password_confirmation"
+        android:textColor="@color/black"
+        android:id="@+id/edt_password_conf"
+        android:layout_marginBottom="5pt"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        tools:ignore="Autofill" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:text="@string/register"
+        android:id="@+id/btn_reg"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@color/colorAccent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/or_login_here"
+        android:textAlignment="center"
+        android:id="@+id/btn_login2"
+        android:layout_marginTop="5pt"
+        android:textColor="@color/colorPrimary"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20pt"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/username_or_email"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5pt"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="@string/username_or_email"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5pt"
+        android:id="@+id/edt_username"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        tools:ignore="Autofill" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/password"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5pt"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="@string/password"
+        android:textColor="@color/black"
+        android:id="@+id/edt_password"
+        android:layout_marginBottom="5pt"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        tools:ignore="Autofill" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:text="@string/login"
+        android:id="@+id/btn_login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@color/colorAccent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/or"
+        android:textAlignment="center"
+        android:id="@+id/btn_reg"
+        android:layout_marginTop="5pt"
+        android:textColor="@color/colorPrimary"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

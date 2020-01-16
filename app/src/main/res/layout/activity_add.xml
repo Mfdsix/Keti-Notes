@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/wrp_main"
+        android:padding="20pt"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/note_title"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5pt"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="@string/note_title"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5pt"
+        android:id="@+id/edt_title"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        tools:ignore="Autofill" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/note_content_here"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5pt"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="@string/note_content_here"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5pt"
+        android:lines="3"
+        android:id="@+id/edt_note"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        tools:ignore="Autofill" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:text="@string/submit"
+        android:id="@+id/btn_submit"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@color/colorAccent"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/grey"
+        android:id="@+id/wrp_load"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            style="@style/SpinKitView.Large.CubeGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            app:SpinKit_Color="@color/colorAccent" />
+
+    </LinearLayout>
+
+</LinearLayout>
